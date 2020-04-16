@@ -40,11 +40,7 @@ h6{
     color: var(--c-dark-greyish-blue);
 }
 p{
-<<<<<<< HEAD
     font-size: 1.4rem;
-=======
-    font-size: 1.8rem;
->>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
     color: var(--c-grayish-blue);
 }
 
@@ -52,7 +48,6 @@ a{
     text-decoration: none;
     color: var(--c-dark-greyish-blue);
 }
-<<<<<<< HEAD
 ul,
 li{
     list-style: none;
@@ -64,12 +59,6 @@ img{
 }
 
 
-=======
-ul{
-    list-style: none;
-}
-
->>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
 // ///////////////////////////
 // HELPER CLASSEs
 // //////////////////////////
@@ -77,7 +66,6 @@ ul{
 
 .section{
     width: 90%;
-<<<<<<< HEAD
     margin: 0 auto;
 
      &-features{
@@ -96,10 +84,6 @@ ul{
         }
     }
 
-=======
-    max-width: 85rem;
-    margin: 0 auto;
->>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
 }
 
 // ///////////////////////////
@@ -129,21 +113,13 @@ body{
     text-align: center; 
 
     &__content{
-<<<<<<< HEAD
         padding: 8rem 0;
         max-width: 55rem;
-=======
-        padding: 10rem 0;
-        max-width: 60rem;
->>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
         margin: 0 auto;
 
         &__heading{
             margin: 2rem 0;
-<<<<<<< HEAD
             font-size: 3.4rem;
-=======
->>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
         }
     }
 
@@ -179,7 +155,6 @@ body{
         box-shadow: 0 .3rem 0 var(--c-light-blue-darker);
     }
 
-<<<<<<< HEAD
 }
 
 
@@ -325,7 +300,5 @@ body{
             width: 2rem;
         }
     }
-=======
->>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
 
 }
