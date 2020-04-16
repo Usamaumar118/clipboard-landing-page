@@ -27,7 +27,11 @@ h6 {
 }
 
 p {
+<<<<<<< HEAD
   font-size: 1.4rem;
+=======
+  font-size: 1.8rem;
+>>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
   color: var(--c-grayish-blue);
 }
 
@@ -36,6 +40,7 @@ a {
   color: var(--c-dark-greyish-blue);
 }
 
+<<<<<<< HEAD
 ul,
 li {
   list-style: none;
@@ -68,6 +73,18 @@ img {
   margin: 2rem 0;
 }
 
+=======
+ul {
+  list-style: none;
+}
+
+.section {
+  width: 90%;
+  max-width: 85rem;
+  margin: 0 auto;
+}
+
+>>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
 html {
   font-size: 62.5%;
   font-family: 'Bai Jamjuree', sans-serif;
@@ -87,14 +104,22 @@ body {
 }
 
 .header__content {
+<<<<<<< HEAD
   padding: 8rem 0;
   max-width: 55rem;
+=======
+  padding: 10rem 0;
+  max-width: 60rem;
+>>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
   margin: 0 auto;
 }
 
 .header__content__heading {
   margin: 2rem 0;
+<<<<<<< HEAD
   font-size: 3.4rem;
+=======
+>>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
 }
 
 .header__btns {
@@ -124,6 +149,7 @@ body {
   -webkit-box-shadow: 0 0.3rem 0 var(--c-light-blue-darker);
           box-shadow: 0 0.3rem 0 var(--c-light-blue-darker);
 }
+<<<<<<< HEAD
 
 .features {
   display: -webkit-box;
@@ -252,4 +278,6 @@ body {
 .footer__social img {
   width: 2rem;
 }
+=======
+>>>>>>> b6f9eedad831c6a0f1e101109c1053a029965045
 /*# sourceMappingURL=style.css.map */
