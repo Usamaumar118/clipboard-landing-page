@@ -32,6 +32,8 @@ p {
 }
 
 a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   color: var(--c-dark-greyish-blue);
 }
@@ -57,6 +59,12 @@ img {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1050px) {
+  .section-features {
+    min-width: auto;
+  }
+}
+
 .section-intro {
   padding: 4rem 0;
   max-width: 55rem;
@@ -74,12 +82,24 @@ html {
   line-height: 1.5;
 }
 
+@media only screen and (max-width: 1050px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-size: 1.8rem;
   background-color: black;
   background: url("images/bg-header-desktop.png") no-repeat;
   background-size: 100%;
   background-position: top;
+}
+
+@media only screen and (max-width: 1050px) {
+  body {
+    text-align: center;
+  }
 }
 
 .header {
@@ -90,6 +110,12 @@ body {
   padding: 8rem 0;
   max-width: 55rem;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .header__content {
+    padding: 6rem 0 0 0;
+  }
 }
 
 .header__content__heading {
@@ -113,6 +139,14 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+  .btn {
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+
 .btn-green {
   background: var(--c-strong-cyan);
   -webkit-box-shadow: 0 0.3rem 0 var(--c-strong-cyan-darker);
@@ -129,16 +163,41 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .features__img {
-  margin-left: -18rem;
+  margin-right: 5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .features__img {
+    margin: 0 auto;
+  }
 }
 
 .features__text-block {
-  width: 60%;
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .features__text-block {
+    margin: 3rem;
+  }
 }
 
 .features__text-block__heading {
@@ -171,21 +230,31 @@ body {
   -ms-grid-rows: max-content 1fr;
       grid-template-rows: -webkit-max-content 1fr;
       grid-template-rows: max-content 1fr;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (30%)[3];
+      grid-template-columns: repeat(3, 30%);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1050px) {
+  .tools {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .tools__intro {
   grid-column: 1 / -1;
-  margin-bottom: 1rem;
 }
 
 .tools .features__text-block {
   text-align: center;
+  margin: 4rem 5rem;
 }
 
 .tools .features__text-block img {
@@ -204,8 +273,22 @@ body {
   margin: 3rem auto;
 }
 
+@media only screen and (max-width: 1050px) {
+  .featured-on {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .featured-on__item {
+    margin: 3rem 0;
+  }
+}
+
 .cta__btns {
   text-align: center;
+  margin-top: 3rem;
 }
 
 .footer {
@@ -213,7 +296,19 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.4rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer__logo {
@@ -237,6 +332,15 @@ body {
       grid-template-columns: repeat(3, 15rem);
 }
 
+@media only screen and (max-width: 700px) {
+  .footer__nav {
+    padding: 2rem 0;
+    gap: 1rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .footer__social {
   width: 15%;
   display: -webkit-box;
@@ -249,7 +353,7 @@ body {
       justify-content: space-around;
 }
 
-.footer__social__img {
+.footer__social img {
   width: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
