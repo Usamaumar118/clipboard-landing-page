@@ -6,6 +6,8 @@
   --c-light-blue-darker: hsl(233, 68%, 62%);
   --c-dark-greyish-blue: hsl(210, 10%, 33%);
   --c-grayish-blue: hsl(201, 11%, 66%);
+  --c-strong-cyan-hover: hsl(171, 88%, 37%);
+  --c-light-blue-hover: hsl(233, 84%, 62%);
 }
 
 *,
@@ -90,7 +92,6 @@ html {
 
 body {
   font-size: 1.8rem;
-  background-color: black;
   background: url("images/bg-header-desktop.png") no-repeat;
   background-size: 100%;
   background-position: top;
@@ -102,6 +103,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  body {
+    background: url("images/bg-header-mobile.png") no-repeat;
+    background-size: 100%;
+  }
+}
+
 .header {
   text-align: center;
 }
@@ -110,12 +118,6 @@ body {
   padding: 8rem 0;
   max-width: 55rem;
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 900px) {
-  .header__content {
-    padding: 6rem 0 0 0;
-  }
 }
 
 .header__content__heading {
@@ -137,6 +139,8 @@ body {
   font-weight: 400;
   border-radius: 10rem;
   text-align: center;
+  -webkit-transition: background .3s ease-in;
+  transition: background .3s ease-in;
 }
 
 @media only screen and (max-width: 900px) {
@@ -153,10 +157,18 @@ body {
           box-shadow: 0 0.3rem 0 var(--c-strong-cyan-darker);
 }
 
+.btn-green:hover {
+  background-color: var(--c-strong-cyan-hover);
+}
+
 .btn-purple {
   background: var(--c-light-blue);
   -webkit-box-shadow: 0 0.3rem 0 var(--c-light-blue-darker);
           box-shadow: 0 0.3rem 0 var(--c-light-blue-darker);
+}
+
+.btn-purple:hover {
+  background-color: var(--c-light-blue-hover);
 }
 
 .features {
@@ -297,6 +309,7 @@ body {
   display: flex;
   font-size: 1.4rem;
   margin-top: 5rem;
+  padding: 2rem 0;
 }
 
 @media only screen and (max-width: 700px) {
@@ -331,11 +344,14 @@ body {
   display: grid;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  justify-items: start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
   -ms-grid-columns: (15rem)[3];
       grid-template-columns: repeat(3, 15rem);
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
 }
 
 @media only screen and (max-width: 700px) {
@@ -345,6 +361,9 @@ body {
     gap: 1rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    justify-items: center;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
 

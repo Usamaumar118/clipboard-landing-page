@@ -12,6 +12,8 @@
     --c-dark-greyish-blue: hsl(210, 10%, 33%);
     --c-grayish-blue: hsl(201, 11%, 66%);
 
+    --c-strong-cyan-hover: hsl(171, 88%, 37%);
+    --c-light-blue-hover: hsl(233, 84%, 62%);
 
 }
 
@@ -109,7 +111,6 @@ html{
 
 body{
     font-size: 1.8rem;
-    background-color: black;
     background: url('images/bg-header-desktop.png') no-repeat;
     background-size: 100%;
     background-position: top; 
@@ -118,6 +119,12 @@ body{
     @media only screen and (max-width: 1050px){
         text-align: center;
     } 
+
+    @media only screen and (max-width: 700px){
+        background: url('images/bg-header-mobile.png') no-repeat;
+        background-size: 100%;
+
+    }
 
 }
 
@@ -132,9 +139,6 @@ body{
         max-width: 55rem;
         margin: 0 auto;
 
-        @media only screen and (max-width: 900px){  
-            padding: 6rem 0 0 0;
-        }
 
         &__heading{
             margin: 2rem 0;
@@ -163,6 +167,7 @@ body{
     font-weight: 400;
     border-radius: 10rem;
     text-align: center;
+    transition: background .3s ease-in;
 
     @media only screen and (max-width: 900px){
         display: block;    
@@ -173,11 +178,21 @@ body{
     &-green{
         background: var(--c-strong-cyan);
         box-shadow: 0 .3rem 0 var(--c-strong-cyan-darker);
+        
+        &:hover{
+            background-color: var(--c-strong-cyan-hover);
+        }
+
+
     }
     
     &-purple{
         background: var(--c-light-blue);
         box-shadow: 0 .3rem 0 var(--c-light-blue-darker);
+
+        &:hover{
+            background-color: var(--c-light-blue-hover);
+        }
     }
 
 }
@@ -338,6 +353,7 @@ body{
     display: flex;
     font-size: 1.4rem;
     margin-top: 5rem;
+    padding: 2rem 0;
 
     @media only screen and (max-width: 700px){
 
@@ -361,15 +377,21 @@ body{
         width: 70%;
         display: grid;
         align-content: flex-start;
+        justify-items: start;
         justify-content: start;
         grid-template-columns: repeat(3, 15rem);
+        grid-template-rows: repeat(2, 50%);
 
-        
+
+
+
     @media only screen and (max-width: 700px){
         padding: 2rem 0;
         font-size: 1.6rem;
         gap: 1rem;
         grid-template-columns: 1fr;
+        justify-items: center;
+        grid-template-rows:auto;
     }
     }
 
@@ -378,10 +400,6 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-around;     
-        
-        
-        
-
 
 
         @media only screen and (max-width: 700px){
@@ -401,4 +419,3 @@ body{
     }
 
 }
-
