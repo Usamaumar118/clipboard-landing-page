@@ -192,12 +192,6 @@ body{
 
 
 .features{
-    // display: grid;
-    // grid-template-columns: 50% 50%;
-    // max-width: 85rem;
-    // align-items: center;
-    // justify-items: center;
-    // gap: 5rem;\
 
     display: flex;
     align-items: center;
@@ -353,8 +347,13 @@ body{
 
     &__logo{
         width: 15%;
+
+        @media only screen and (max-width: 700px){
+            width: 50%;
+            
+        }
         img{
-         width: 4rem;
+         width: 6rem;
         }
     }
 
@@ -368,6 +367,7 @@ body{
         
     @media only screen and (max-width: 700px){
         padding: 2rem 0;
+        font-size: 1.6rem;
         gap: 1rem;
         grid-template-columns: 1fr;
     }
@@ -377,10 +377,26 @@ body{
         width: 15%;
         display: flex;
         align-items: center;
-        justify-content: space-around;       
+        justify-content: space-around;     
+        
+        
+        
+
+
+
+        @media only screen and (max-width: 700px){
+            width: 50%;
+
+        }
 
         img{
             width: 2rem;
+
+            @media only screen and (max-width: 700px){
+                width: 2rem;
+                
+            }
+
         }
     }
 
